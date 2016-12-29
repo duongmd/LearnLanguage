@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewAddRecorder" customModule="LearnLanguage" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDoneRecorder" destination="kVy-4b-QHZ" id="1WI-nQ-Fnw"/>
+                <outlet property="recordBtn" destination="ok2-mG-lpn" id="iCj-0s-5sE"/>
+                <outlet property="stopBtn" destination="4U8-xX-Qmd" id="4FY-E0-7Kh"/>
+                <outlet property="timeRecorder" destination="REi-Yh-f40" id="Rin-Rz-ATp"/>
+                <outlet property="titleRecorder" destination="WwI-0u-bxg" id="lhX-yO-kmW"/>
+                <outlet property="view" destination="ECp-ux-doF" id="HcY-1b-2Jn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ECp-ux-doF">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l91-QM-NPU">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="900-jn-LGm"/>
+                        <constraint firstAttribute="width" constant="34" id="PqM-Ue-b3b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WwI-0u-bxg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="U16-NK-3FB"/>
+                        <constraint firstAttribute="width" constant="275" id="eSd-Sa-5yD"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVy-4b-QHZ">
+                    <color key="backgroundColor" red="0.55268346339999996" green="1" blue="0.59858478020000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="e9v-cR-Fdf"/>
+                        <constraint firstAttribute="width" constant="72" id="uQC-qE-lqP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="DONE"/>
+                    <connections>
+                        <action selector="actDoneRecorder:" destination="-1" eventType="touchUpInside" id="xZu-Zz-ppS"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Recorder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuM-5u-98G">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="8zK-hR-YRI"/>
+                        <constraint firstAttribute="width" constant="146" id="yDI-CT-KO7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REi-Yh-f40">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="3oQ-CW-bpm"/>
+                        <constraint firstAttribute="width" constant="61" id="Ly1-S6-zQX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ok2-mG-lpn">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="8tI-A1-7fc"/>
+                        <constraint firstAttribute="height" constant="30" id="gdg-f2-VGt"/>
+                    </constraints>
+                    <state key="normal" title="Record"/>
+                    <connections>
+                        <action selector="startRecorder:" destination="-1" eventType="touchUpInside" id="4Es-fX-ppu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U8-xX-Qmd">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="GhV-gb-Ag2"/>
+                        <constraint firstAttribute="width" constant="46" id="iw1-7p-Qyh"/>
+                    </constraints>
+                    <state key="normal" title="Stop"/>
+                    <connections>
+                        <action selector="stopRecorder:" destination="-1" eventType="touchUpInside" id="qtd-OD-bcP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ok2-mG-lpn" firstAttribute="top" secondItem="WwI-0u-bxg" secondAttribute="bottom" constant="26" id="02R-lJ-aoP"/>
+                <constraint firstItem="kVy-4b-QHZ" firstAttribute="top" secondItem="REi-Yh-f40" secondAttribute="bottom" constant="69" id="0RA-ai-SH0"/>
+                <constraint firstItem="WwI-0u-bxg" firstAttribute="leading" secondItem="l91-QM-NPU" secondAttribute="trailing" constant="34" id="4Ri-tC-wcv"/>
+                <constraint firstItem="REi-Yh-f40" firstAttribute="leading" secondItem="ok2-mG-lpn" secondAttribute="trailing" constant="19" id="B2F-VZ-OMu"/>
+                <constraint firstAttribute="trailing" secondItem="kVy-4b-QHZ" secondAttribute="trailing" constant="152" id="Qnk-l5-FFe"/>
+                <constraint firstItem="VuM-5u-98G" firstAttribute="leading" secondItem="ECp-ux-doF" secondAttribute="leading" constant="114" id="Thu-DD-dsH"/>
+                <constraint firstAttribute="trailing" secondItem="VuM-5u-98G" secondAttribute="trailing" constant="115" id="V8o-IW-jk0"/>
+                <constraint firstItem="4U8-xX-Qmd" firstAttribute="top" secondItem="WwI-0u-bxg" secondAttribute="bottom" constant="25" id="V9M-iB-xG8"/>
+                <constraint firstItem="l91-QM-NPU" firstAttribute="leading" secondItem="ECp-ux-doF" secondAttribute="leading" constant="16" id="VmZ-le-x0y"/>
+                <constraint firstItem="REi-Yh-f40" firstAttribute="top" secondItem="WwI-0u-bxg" secondAttribute="bottom" constant="30" id="ZUM-lY-8Fx"/>
+                <constraint firstItem="kVy-4b-QHZ" firstAttribute="leading" secondItem="ECp-ux-doF" secondAttribute="leading" constant="151" id="bES-gs-0nt"/>
+                <constraint firstItem="4U8-xX-Qmd" firstAttribute="leading" secondItem="REi-Yh-f40" secondAttribute="trailing" constant="39" id="cfG-Vq-7Co"/>
+                <constraint firstItem="ok2-mG-lpn" firstAttribute="leading" secondItem="ECp-ux-doF" secondAttribute="leading" constant="84" id="hSc-g2-ObT"/>
+                <constraint firstAttribute="trailing" secondItem="WwI-0u-bxg" secondAttribute="trailing" constant="16" id="hwd-JY-2Yz"/>
+                <constraint firstItem="l91-QM-NPU" firstAttribute="top" secondItem="ECp-ux-doF" secondAttribute="top" constant="179" id="kUc-i4-DuK"/>
+                <constraint firstItem="WwI-0u-bxg" firstAttribute="top" secondItem="VuM-5u-98G" secondAttribute="bottom" constant="62" id="oeL-0g-Wj5"/>
+                <constraint firstItem="VuM-5u-98G" firstAttribute="top" secondItem="ECp-ux-doF" secondAttribute="top" constant="85" id="rhT-AP-7M6"/>
+                <constraint firstAttribute="trailing" secondItem="4U8-xX-Qmd" secondAttribute="trailing" constant="67" id="z8n-hL-dee"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

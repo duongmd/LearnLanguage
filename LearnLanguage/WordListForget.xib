@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WordListForget" customModule="LearnLanguage" customModuleProvider="target">
+            <connections>
+                <outlet property="mySearch2" destination="UqB-m9-fN6" id="XhF-6p-nvd"/>
+                <outlet property="tbvWordListForget" destination="7c1-oB-63L" id="yCk-sE-hfi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7c1-oB-63L">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="UqB-m9-fN6">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="fnM-gQ-tkS"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UqB-m9-fN6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5lc-e6-MAq"/>
+                <constraint firstAttribute="trailing" secondItem="7c1-oB-63L" secondAttribute="trailing" id="EfW-uV-6xc"/>
+                <constraint firstAttribute="bottom" secondItem="7c1-oB-63L" secondAttribute="bottom" id="Elj-eZ-O1R"/>
+                <constraint firstItem="UqB-m9-fN6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Erw-Ke-yqZ"/>
+                <constraint firstItem="7c1-oB-63L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Sfw-LU-erV"/>
+                <constraint firstAttribute="trailing" secondItem="UqB-m9-fN6" secondAttribute="trailing" id="Y6M-zC-pmC"/>
+                <constraint firstItem="7c1-oB-63L" firstAttribute="top" secondItem="UqB-m9-fN6" secondAttribute="bottom" id="ynK-CO-i4J"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
